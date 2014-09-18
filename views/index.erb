@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>quilt</title>
+    <link rel="stylesheet" href="/assets/css/application.css" media="screen" charset="utf-8">
+  </head>
+  <body>
+    <% @patch.layers.first.pixels.each do |pixel| %>
+      <div style="left:<%= pixel.x * 15 %>px; top: <%= pixel.y * 15 %>px;"></div>
+    <% end %>
+
+    <script type="text/javascript" src="http://code.jquery.com/jquery-2.1.1.min.js"></script>
+    <script type="text/javascript" src="/assets/js/application.js"></script>
+  </body>
+</html>

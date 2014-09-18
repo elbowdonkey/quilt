@@ -6,7 +6,8 @@ class CreatePixels < ActiveRecord::Migration
       t.integer :r
       t.integer :g
       t.integer :b
-      t.integer :a
+      t.decimal :a
+      t.integer :layer_id
       t.timestamps
     end
   end
